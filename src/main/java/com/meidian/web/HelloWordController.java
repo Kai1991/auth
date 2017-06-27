@@ -1,5 +1,9 @@
 package com.meidian.web;
 
+import com.fasterxml.jackson.databind.util.JSONPObject;
+import com.meidian.entity.Test;
+import com.meidian.service.TestService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,8 +20,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/hello")
 public class HelloWordController {
 
+    @Autowired
+    private TestService testService;
+
     @RequestMapping(value = "/word")
     public String index(){
         return "Hello word!";
+    }
+
+    @RequestMapping(value = "/test")
+    public String test(Long id){
+        return testService.getBy(id).getTest();
     }
 }

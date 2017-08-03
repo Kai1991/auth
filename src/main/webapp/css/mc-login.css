@@ -1,0 +1,780 @@
+@charset "utf-8";
+/**
+ * Description: base style 
+ * Developers: liuyating@meicai.cn
+ **/
+/*reset  start
+---------------------------------------------------------*/
+
+/* 登录页 */
+div#slideshow { width:100%; height:600px; overflow:hidden; z-index: 1; }
+.slider {width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	background: url(../images/new/banner2.png) no-repeat;
+	background-size: cover;
+}
+
+*{
+	font-family:Avenir Next;
+}
+.header{
+	width:100%;
+	border-bottom:3px solid #81c25b;
+	padding-bottom: 15px;
+}
+.T-mc-Login{
+	width: 1200px;
+	margin: 23px auto 22px;
+}
+
+.T-mc-Login h1 {
+	font-family:PingFangSC-Regular;
+	font-size:24px;
+	color:#62b134;
+	vertical-align: middle;
+}
+.T-mc-Login h1 img{
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	margin-right:18px;
+}
+.T-mc-Login-i{
+	display: inline-block;
+	margin-right: 20px;
+}
+.T-mc-Login-i:after{
+	content: '';
+	height: 36px;
+	width: 2px;
+	border-right: 1px solid #62b134;
+	display: inline-block;
+	
+	position: absolute;
+	top: 30px;
+	margin-right: 20px;
+}
+
+  .T-Login-bgImg {
+     width: 1200px;
+     margin: 0 auto;
+}
+.T-dynamic-img {
+	float: left;
+	margin-top: 12px;
+}
+
+ .T-login-content{
+ 	position:relative;
+ 	z-index: 6;
+ 	top: -540px;
+	left: 50%;
+	margin-left: -270px;
+	width: 540px;
+	text-align: center;
+	color: #fff;
+ }
+
+ .T-login-content h2{
+ 	font-family:Avenir Next;
+	font-size:40px;
+	
+ }
+
+.T-login-content h2 span{
+	width: 40px;
+	display: inline-block;
+	position: relative;
+}
+.T-login-content h2 span img{
+	top: -18px;
+	left: 16px;
+	position: absolute;
+}
+
+ .T-login-list{
+ 	width: 100%;
+ 	clear: both;
+ 	overflow: hidden;
+ 	margin-top: 16px;
+ 	font-size: 22px;
+ }
+  .T-login-content ul li{
+  	float: left; 
+  	margin-right: 28px;
+  }
+
+ .T-login-content ul li:last-child{
+    	margin-right: 0;
+  }
+  .T-login-from{
+  	width: 328px;
+  	margin: 46px auto 0;
+  	margin-bottom: 100px;
+  } 
+  .T-login-from li{
+  	float: left;
+  	width: 100%;
+  	margin-bottom: 25px;
+  }
+
+.T-login-from li input{
+	font-family:PingFangSC-Regular;
+	font-size:14px;
+	color:#b0b0b0;
+	width: 100%;
+	height: 44px;
+	background-color: #fff;
+	border-radius:4px;
+	text-indent: 10px;
+
+}
+.T-f-yzm{
+	float: left;
+}
+.T-f-yzm img{
+	margin: 10px 0 0 26px;
+	float: left;
+}
+.T-f-yzm .T-login-h{
+	display: block;
+	padding-top: 20px;
+	text-align: right;
+	font-size: 14px;
+}
+.T-f-yzm .T-login-h a{
+	color: #fff;
+}
+.T-f-yzm .T-login-h a:hover{
+	text-decoration: underline;
+}
+.T-login-from li .yzm {
+	width: 148px;
+	display: block;
+	text-align: left;
+	float: left; 
+	vertical-align: middle;
+
+}
+.T-login-button{
+	display: inline-block;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	background:#62b134;
+	border-radius:4px;
+	color: #fff;
+	margin: 0 3px 0 4px;
+
+}
+.T-F-password{
+	text-align: right;
+	font-size:14px;
+	color:#ffffff;
+	margin-top: 22px;
+}
+.T-F-password:hover{
+	text-decoration: underline;
+}
+.T-bg {
+	padding:16px 4px 16px 4px;
+	margin:auto;background:#fff;
+	background:rgba(333, 333, 333, 0.2);
+	filter:Alpha(opacity=60);
+	border-radius: 8px;
+}
+.T-bg1 {
+	width: 148px;
+	float: left;
+	display: inline-block;
+	padding:3px 4px;
+	margin:auto;background:#fff;
+	background:rgba(333, 333, 333, 0.2);
+	filter:Alpha(opacity=60);
+	border-radius: 8px;
+}
+/* 门户页 */
+.T-mc-home{
+	width: 1000px;
+	margin: 23px auto 0;
+	font-family:PingFangSC-Light;
+	font-size:24px;
+	color:#383838;
+}
+.T-mc-home h1{
+	width: 100%;
+}
+.T-mc-home img{
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.T-bgmh{
+	vertical-align: middle;
+	margin-top: 8px;
+	display: inline-block;
+}
+.T-mc-home h1 a{
+	color:#3491F7;
+	display: inline-block;
+	width: 57px;
+    /* text-indent: 18px; */
+}
+.T-mc-home h1 a:hover{
+	text-decoration: underline;
+}
+
+.T-home-text{
+	float: right;
+	margin-top: 18px;
+	font-family:PingFangSC-Light;
+	font-size:14px;
+	color:#383838;
+}
+
+.T-home-nav{
+	width: 1000px;
+	background-color: #62b134;
+	margin: 0 auto;
+	font-family:PingFangSC-Medium;
+}
+.T-home-nav ul{
+	float: left;
+	margin-top: 10px;
+	width: 100%;
+	height: auto;
+}
+.T-home-nav li{
+	float: left;
+	font-size:14px;
+	color:#ffffff;
+	height: 50px;
+	line-height: 50px;
+}
+
+.T-home-nav li a{
+	padding: 0 23px;
+	display: block;
+	color:#383838;
+}
+.T-home-nav li a:hover{
+	    text-decoration: none;
+}
+.T-home-nav li a:hover{
+	display: block;
+	color: #81c25b;
+}
+
+
+.T-home-content{
+	padding-top: 32px;
+}
+.T-home-c-l{
+	float: left;
+	width: 680px;
+}
+.login-out {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* .login-out{
+	background:url("../images/new/login-out.png") no-repeat ;
+	background-size:18px 14px;
+} */
+.T-honme-dynamic{
+	border-top: 1px solid #62b134;
+	margin-bottom: 40px;
+}
+
+.T-honme-dynamic h2,.T-home-system h2{
+	padding-top: 13px;
+	font-size: 16px;
+	color: #64b236;
+}
+.T-home-c-l h2 span{
+	float: right;
+	font-size: 14px;
+	
+}
+.T-honme-dynamic h2 a{
+	color: #64b236;
+}
+.T-honme-dynamic h2 a:hover{
+	text-decoration: underline;
+}
+.T-honme-dynamic ul{
+	float: left;
+	width: 407px;
+	line-height: 30px;
+	margin: 20px 0  0 25px;
+	font-family:PingFangHK-Light;
+	font-size:14px;
+	color:#383838;
+}
+.T-honme-dynamic ul li a,.T-home-system ul li a{
+	color:#383838;
+}
+.T-honme-dynamic ul li a:hover,.T-home-system ul li a:hover{
+	text-decoration: underline;
+}
+.T-honme-dynamic ul span{
+	float: right;
+	font-size: 12px;
+	color:#727272;
+}
+.T-home-system{
+	float: left;
+	width: 320px;
+	border-top: 1px solid #62b134;
+}
+.T-home-system ul{
+	margin-top: 10px;
+	line-height: 26px;
+	font-size:14px;
+	color:#383838;
+}
+
+.T-home-recommend{
+	float: right;
+}
+.T-home-c-r{
+	width: 302px;
+}
+.T-home-Todo{
+	width: 300px;
+	border:1px solid #e8e8e8;
+	height: auto;
+}
+.T-home-Todo h2{
+	width: 100%;
+	background:#f8f8f8;
+	height:36px;
+	line-height: 36px;
+	font-family:PingFangHK-Regular;
+	font-size:16px;
+	color:#62b134;
+	text-indent: 10px;
+}
+.T-home-Todo h2 span{
+	padding-right: 10px;
+	
+}
+.T-home-Todo h2 span a{
+	color:#62b134;
+}
+.T-home-Todo h2 span a:hover{
+	text-decoration: underline;
+}
+.T-home-Todo ul{
+	margin-top: 5px;
+	padding:  0 10px 10px;
+	line-height: 30px;
+	font-size:14px;
+	color:#383838;
+}
+.T-home-Todo ul li{
+	color:#727272;
+}
+.T-home-Todo ul li a{
+	color:#383838;
+}
+.T-home-Todo ul li a:hover{
+	text-decoration: underline;
+}
+.T-home-Todo ul li span{
+	font-size: 12px;
+	color:#727272;
+}
+.T-home-process {
+	margin-top: 20px;
+}
+
+/* 忘记密码 */
+.T-password-bg{
+	width: 100%;
+	height: 100%;
+	background-color: #f8f8f8;
+}
+.T-z-password{
+	font-size:24px;
+	color:#383838;
+	margin-top: 15px;
+}
+.T-password-content{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-top: 2px solid #62b134;
+	padding-bottom: 50px;
+}
+
+.TT-password-content{
+	width: 920px;
+	margin: 0 auto;
+	font-size:24px;
+	color:#383838;
+}
+.T-password-step{
+	margin: 70px auto 0px;
+	width: 895px;
+	overflow: hidden;
+	height: 75px;
+}
+
+.T-password-step ul{
+	float: left;
+	margin-top: -20px;
+	margin-left: 10px;
+	position: absolute;
+}
+
+.T-password-step li{
+	float: left;
+	position: absolute;
+	top: -5px;
+
+}
+.T-password-step li:nth-child(1){
+	left: -12px;
+}
+
+.T-password-step li:nth-child(2){
+	left: 285px;
+}
+.T-password-step li:nth-child(3){
+	left: 570px;
+}
+.T-password-step li:last-child{
+	left: 860px;
+}
+.T-password-number{
+	display:block;
+	text-align: center;
+	background-color: #f2f2f2;
+	width: 22px;
+	height: 22px;
+	line-height: 24px;
+	border-radius:100%;
+	margin-bottom: 20px;
+	font-size: 18px;
+	border:8px solid #e8e8e8;
+	color:#9b9b9b;
+	position: relative;
+	z-index: 10;
+}
+
+.T-green-bg{
+	width: 300px;
+	height: 10px;
+	background:#62b134;
+	position: relative;
+	top: 25px;
+	left: 10px;
+	z-index: 6;
+}
+
+.T-gray-bg{
+	width: 300px;
+	height: 10px;
+	background:#e8e8e8;
+	position: relative;
+	top: 25px;
+	left: 10px;
+	z-index: 6;
+}
+.T-greenbg-width{
+	width: 20px;
+}
+
+.T-password-text{
+	position: absolute;
+	left: -10px;
+	display: inline-block;
+	width: 70px;
+	font-size:14px;
+	color:#b0b0b0;
+}
+.T-password-green .T-password-text{
+	color:#383838;
+}
+.T-password-green .T-password-number{
+	background:#62b134;
+	color: #fff;
+	border:8px solid #62b134;
+	z-index: 9;
+}
+
+.T-password-form {
+	width: 380px;
+	margin: 60px auto 0;
+	font-size:14px;
+	color:#383838;
+}
+.T-password-form .T-account-number{
+	width: 185px;
+	height: 35px;
+	border:1px solid #e8e8e8;
+	vertical-align: middle;
+	border-radius: 3px 0 0 3px;
+	
+}
+.T-password-form input{
+	text-indent: 10px;
+	border-radius: 2px;
+}
+.T-p-text {
+	width: 70px;
+	text-align: right;
+	margin-right: 13px;
+	display: inline-block;
+	font-size:14px;
+	color:#383838;
+}
+.T-password-form .T-p-yzm{
+	display: inline-block;
+	width: 98px;
+	height: 37px;
+	line-height: 35px;
+	text-align: center;
+	background-color: #e8e8e8;
+	font-size:14px;
+	color:#383838;
+	vertical-align: middle;
+}
+
+.T-password-form li{
+	margin-bottom: 25px;   
+}
+.T-password-form li img{
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.T-p-verification{
+	width: 126px;
+	height: 35px;
+	border:1px solid #e8e8e8;
+}
+.T-hyz{
+	margin-left: 15px;
+	font-size:14px;
+	color:#62b134;
+}
+.T-hyz:hover{
+	text-decoration: underline;
+}
+.T-password-Button{
+	float: left;
+	margin-left: 89px;
+	width: 130px;
+	height: 35px;
+	background-color: #62b134;
+	border-radius: 2px;
+	display: block;
+	line-height: 35px;
+	text-align: center;
+	font-size:14px;
+	color:#ffffff;
+}
+
+
+.T-password-form .T-account-mobile{
+	width: 185px;
+	height: 35px;
+	border:1px solid #e8e8e8;
+	vertical-align: middle;
+	border-radius: 2px;
+	margin-right: 20px;
+}
+
+
+.T-password-form .T-p-time {
+    display: inline-block;
+   	padding:0px 5px;
+   	text-indent:0;
+    line-height: 35px;
+    text-align: center;
+    background-color: #e8e8e8;
+    font-size:14px;
+	color:#9b9b9b;
+    vertical-align: middle;
+    border-radius: 2px;
+    min-width:90px;
+}
+.T-password-form .T-p-Vcode {
+    display: inline-block;
+   	padding:0px 5px;
+   	text-indent:0;
+   	 min-width:90px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #fff;
+    border:1px solid #62b134;
+    font-size:14px;
+	color:#62b134;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+/* 忘记密码 */
+
+.T-reset-password{
+	margin-top: 10px;
+}
+.T-reset-password .T-r-p-text{
+	margin: 0 auto; 
+	width: 80%;
+	text-align: center;
+	height: 36px;
+	line-height: 36px;
+	background:#fcfae2;
+	font-size:14px;
+	color:#f96148;
+	margin-bottom: 16px;
+}
+
+/* 重置成功 */
+.T-Reset-success {
+	text-align: center;
+    width: 380px;
+    margin: 90px auto 60px;
+    font-size: 14px;
+    color: #383838;
+}
+.T-R-success-email{
+	font-size:14px;
+	color:#4a90e2;
+}
+.T-rp-tips{
+	color:#4a90e2;
+	margin-top: 20px;
+}
+.T-rp-tips img{
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+/* 温馨提示 */
+.T-reminder{
+	width: 1200px;
+	margin: 20px auto;
+}
+.T-reminder h2{
+	font-size:14px;
+	color:#000000;
+}
+.T-reminder ol{
+	font-size:14px;
+	color:#383838;
+}
+
+.resetform-errormsg-tips{
+	width:100%;
+	height:30px;
+	padding-top:45px;
+	padding-left:89px;
+}
+
+.T-mc-home .split {
+    margin: 0 5px;
+    color: #979797;
+}
+
+
+#backticket_container{
+	border:1px solid #e8e8e8;
+	width:998px;
+	height:135px;
+	margin:30px auto 0;
+}
+#backticket_container h2 {
+	width:100%;
+	height:36px;
+    line-height: 36px;
+	background:rgba(129,194,91,0.07);
+	font-size:12px;
+	color:#e15e59;
+	text-indent: 15px;
+	
+}
+#backticket_container h2 span{
+	font-size:16px;
+	color:#383838;
+	padding-right:20px;
+	font-family:PingFangHK-Regular;
+}
+#backticket_container ul{
+	margin-top:5px;
+}
+#backticket_container ul.news li{
+	float:left;
+	width:320px;
+	margin-left:12px;
+	margin-top:10px;
+	line-height:28px;
+	text-indent:5px; 
+	font-size:14px;
+	color:#383838;
+} 
+#backticket_container ul.news li a{
+	color:#383838;
+}
+#backticket_container ul.news li span{
+	font-size:12px;
+	color:#727272;
+	margin-left: 20px;
+}	
+
+.opacity_bg {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: #000;
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+	
+.add {
+    background: #4bcbcb;
+    width: 60px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 20px;
+    display: inline-block;
+    font-style: normal;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.ball_city {
+    width: 680px;
+    height: 400px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -340px;
+    z-index: 100;
+    display: none;
+}
+#backticket_container h2{
+	margin-top: 0;
+}
+	

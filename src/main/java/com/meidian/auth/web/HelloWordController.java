@@ -1,9 +1,10 @@
 package com.meidian.auth.web;
 
-import com.meidian.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Title: com.meidian.web<br>
@@ -14,25 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @author 张中凯
  *         2017/6/27
  */
-@RestController()
+@Controller()
 @RequestMapping(value = "/hello")
 public class HelloWordController {
 
-    @Autowired
-    private TestService testService;
-
     @RequestMapping(value = "/word")
-    public String index(){
-        return "Hello word!";
-    }
-
-    @RequestMapping(value = "/test")
-    public String test(Long id){
-        return testService.getBy(id).getTest();
-    }
-
-    @RequestMapping(value = "/testPage")
-    public String testPage(){
-        return "test/test";
+    public ModelAndView index(){
+        return new ModelAndView("index");
     }
 }

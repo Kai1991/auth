@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.meidian.dao")//配置扫描dao包
+@MapperScan(basePackages = "com.meidian.auth.dao")//配置扫描dao包
 @EnableAutoConfiguration
 /*@ComponentScan("com.meidian")*/
 public class DemoApplication {

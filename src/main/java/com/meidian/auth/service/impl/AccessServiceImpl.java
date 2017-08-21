@@ -1,6 +1,7 @@
 package com.meidian.auth.service.impl;
 
 import com.meidian.auth.service.AccessService;
+import org.springframework.stereotype.Service;
 
 /**
  * Title: 权限服务<br>
@@ -11,5 +12,6 @@ import com.meidian.auth.service.AccessService;
  * @author 张中凯
  *         2017/8/5
  */
+@Service
 public class AccessServiceImpl implements AccessService {
 }

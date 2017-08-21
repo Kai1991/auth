@@ -1,6 +1,7 @@
 package com.meidian.auth.service.impl;
 
 import com.meidian.auth.service.AuthorizationService;
+import org.springframework.stereotype.Service;
 
 /**
  * Title: 授权服务<br>
@@ -11,5 +12,6 @@ import com.meidian.auth.service.AuthorizationService;
  * @author 张中凯
  *         2017/8/5
  */
+@Service
 public class AuthorizationServiceImpl implements AuthorizationService {
 }

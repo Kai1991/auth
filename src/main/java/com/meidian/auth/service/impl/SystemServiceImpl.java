@@ -1,6 +1,7 @@
 package com.meidian.auth.service.impl;
 
 import com.meidian.auth.service.SystemService;
+import org.springframework.stereotype.Service;
 
 /**
  * Title: 系统服务<br>
@@ -11,5 +12,6 @@ import com.meidian.auth.service.SystemService;
  * @author 张中凯
  *         2017/8/5
  */
+@Service
 public class SystemServiceImpl implements SystemService {
 }

@@ -1,5 +1,7 @@
 package com.meidian.auth.dao;
 
+import com.meidian.auth.entity.Access;
+
 /**
  * Title: com.meidian.auth.dao<br>
  * Description: <br>
@@ -10,4 +12,7 @@ package com.meidian.auth.dao;
  *         2017/8/2
  */
 public interface AccessDao {
+
+    public Access getAccess(Access access);
+
 }

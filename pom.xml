@@ -6,9 +6,6 @@
 	<groupId>com.meidian</groupId>
 	<artifactId>auth</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<modules>
-		<module>auth-main</module>
-	</modules>
 	<packaging>pom</packaging>
 
 	<name>auth</name>

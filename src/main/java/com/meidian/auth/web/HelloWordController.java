@@ -1,7 +1,10 @@
 package com.meidian.auth.web;
 
+import com.alibaba.fastjson.JSONObject;
 import com.meidian.auth.dao.AccessDao;
 import com.meidian.auth.entity.Access;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +20,10 @@ import org.springframework.web.servlet.ModelAndView;
  * @author 张中凯
  *         2017/6/27
  */
-@Controller
+@RestController
 @RequestMapping(value = "/hello")
 public class HelloWordController {
+    private static final Logger logger = LoggerFactory.getLogger(HelloWordController.class);
 
     @Autowired
     private AccessDao accessDao;
@@ -31,6 +35,8 @@ public class HelloWordController {
 
     @RequestMapping(value = "/testMybatis")
     public Access testMybatis(Access access){
-        return accessDao.getAccess(access);
+        Access result = accessDao.getAccess(access);
+        logger.info("result:" + JSONObject.toJSONString(result));
+        return result;
     }
 }

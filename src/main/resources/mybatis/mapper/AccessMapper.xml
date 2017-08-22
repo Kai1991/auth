@@ -17,7 +17,7 @@
     id, action, status, name, description, c_t, u_t, c_u, u_u, is_deleted
   </sql>
 
-  <select id="getAccess" parameterType="com.meidian.auth.entity.Access">
+  <select id="getAccess" parameterType="com.meidian.auth.entity.Access" resultMap="BaseResultMap">
     SELECT * FROM access
     WHERE id = ${id}
   </select>

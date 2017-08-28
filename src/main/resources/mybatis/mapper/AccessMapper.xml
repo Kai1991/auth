@@ -21,4 +21,11 @@
     SELECT * FROM access
     WHERE id = ${id}
   </select>
+
+  <select id="getAccessList" parameterType="com.meidian.auth.entity.Access" resultMap="BaseResultMap">
+    SELECT <include refid="Base_Column_List"/>
+    FROM access
+    /*WHERE id = ${access.id}*/
+    ORDER BY  id
+  </select>
 </mapper>

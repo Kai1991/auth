@@ -1,5 +1,10 @@
 package com.meidian.auth.manager;
 
+import com.meidian.auth.entity.Access;
+import com.meidian.auth.interceptor.PageCondition;
+
+import java.util.List;
+
 /**
  * Title: com.meidian.auth.manager<br>
  * Description: <br>
@@ -10,4 +15,6 @@ package com.meidian.auth.manager;
  *         2017/8/3
  */
 public interface AccessManager {
+
+    public List<Access> getAccessList(PageCondition pageCondition, Access access);
 }

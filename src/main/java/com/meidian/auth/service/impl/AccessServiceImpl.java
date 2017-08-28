@@ -1,7 +1,14 @@
 package com.meidian.auth.service.impl;
 
+import com.meidian.auth.common.ServiceResult;
+import com.meidian.auth.entity.Access;
+import com.meidian.auth.interceptor.PageCondition;
+import com.meidian.auth.manager.AccessManager;
 import com.meidian.auth.service.AccessService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * Title: 权限服务<br>
@@ -14,4 +21,13 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class AccessServiceImpl implements AccessService {
+
+    @Autowired
+    private AccessManager accessManager;
+
+    public ServiceResult<Access> getAccessList(PageCondition pageCondition, Access access){
+        List<Access> accessList = accessManager.getAccessList(pageCondition,access);
+
+        return null;
+    }
 }

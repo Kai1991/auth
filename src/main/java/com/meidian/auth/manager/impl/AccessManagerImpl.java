@@ -1,6 +1,13 @@
 package com.meidian.auth.manager.impl;
 
+import com.meidian.auth.dao.AccessDao;
+import com.meidian.auth.entity.Access;
+import com.meidian.auth.interceptor.PageCondition;
 import com.meidian.auth.manager.AccessManager;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 /**
  * Title: com.meidian.auth.manager.impl<br>
@@ -11,5 +18,14 @@ import com.meidian.auth.manager.AccessManager;
  * @author 张中凯
  *         2017/8/3
  */
+@Component
 public class AccessManagerImpl implements AccessManager {
+
+    @Autowired
+    private AccessDao accessDao;
+
+    @Override
+    public List<Access> getAccessList(PageCondition pageCondition, Access access) {
+        return accessDao.getAccessList(pageCondition,access);
+    }
 }

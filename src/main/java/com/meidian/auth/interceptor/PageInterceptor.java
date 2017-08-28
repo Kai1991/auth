@@ -11,7 +11,9 @@ import org.apache.ibatis.reflection.SystemMetaObject;
 import org.apache.ibatis.reflection.property.PropertyTokenizer;
 import org.apache.ibatis.scripting.defaults.DefaultParameterHandler;
 import org.apache.ibatis.scripting.xmltags.ForEachSqlNode;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -34,7 +36,7 @@ import java.util.Properties;
  */
 @Intercepts({@Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class})})
 public class PageInterceptor implements Interceptor {
-    private static final Logger LOGGER = Logger.getLogger(PageInterceptor.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(PageInterceptor.class);
 
     private static final String BOUND_SQL_KEY = "delegate.boundSql.sql";
     private static final String MAPPED_STATEMENT_KEY = "delegate.mappedStatement";

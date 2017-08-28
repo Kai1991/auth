@@ -1,5 +1,9 @@
 package com.meidian.auth.service;
 
+import com.meidian.auth.common.ServiceResult;
+import com.meidian.auth.entity.Access;
+import com.meidian.auth.interceptor.PageCondition;
+
 /**
  * Title: 权限服务<br>
  * Description: <br>
@@ -10,4 +14,6 @@ package com.meidian.auth.service;
  *         2017/8/5
  */
 public interface AccessService {
+
+    public ServiceResult<Access> getAccessList(PageCondition pageCondition, Access access);
 }

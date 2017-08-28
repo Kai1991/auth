@@ -1,6 +1,10 @@
 package com.meidian.auth.dao;
 
 import com.meidian.auth.entity.Access;
+import com.meidian.auth.interceptor.PageCondition;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * Title: com.meidian.auth.dao<br>
@@ -15,4 +19,5 @@ public interface AccessDao {
 
     public Access getAccess(Access access);
 
+    public List<Access> getAccessList(PageCondition pageCondition,@Param("access") Access access);
 }

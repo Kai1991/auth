@@ -14,15 +14,20 @@
 		<setting name="cacheEnabled" value="false" />
 		<setting name="defaultExecutorType" value="REUSE" />
 	</settings>
-	<!--<plugins>
-		<plugin interceptor="com.sprucetec.bone.common.dao.pagebatis.PageInterceptor">
-			<property name="dialectType" value="com.sprucetec.tms.distribute.pagebatis.MySQLDialect" />
-		</plugin>
-	</plugins>-->
 	<typeAliases>
 		<package name="com.meidian.dao"/>
 	</typeAliases>
+	<plugins>
+		<plugin interceptor="com.meidian.auth.interceptor.PageInterceptor">
+			<property name="dialectType" value="com.meidian.auth.interceptor.MySQLDialect" />
+		</plugin>
+	</plugins>
 	<mappers>
-		<mapper resource="mybatis/mapper/test.xml" />
+		<mapper resource="mybatis/mapper/AccessMapper.xml" />
+		<mapper resource="mybatis/mapper/RoleAccessMapper.xml" />
+		<mapper resource="mybatis/mapper/RoleMapper.xml" />
+		<mapper resource="mybatis/mapper/SystemMapper.xml" />
+		<mapper resource="mybatis/mapper/UserMapper.xml" />
+		<mapper resource="mybatis/mapper/UserRoleMapper.xml" />
 	</mappers>
 </configuration>

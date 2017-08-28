@@ -1,4 +1,4 @@
-package com.meidian.auth.web;
+package com.meidian.auth.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

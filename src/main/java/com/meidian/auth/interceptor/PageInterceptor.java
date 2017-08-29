@@ -34,7 +34,7 @@ import java.util.Properties;
  * @author 张中凯
  *         2017/8/27
  */
-@Intercepts({@Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class})})
+@Intercepts({ @Signature(type = StatementHandler.class, method = "prepare", args = { Connection.class,Integer.class }) })
 public class PageInterceptor implements Interceptor {
     private static final Logger LOGGER = LoggerFactory.getLogger(PageInterceptor.class);
 

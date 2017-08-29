@@ -19,8 +19,8 @@
 	</typeAliases>
 	<plugins>
 		<plugin interceptor="com.meidian.auth.interceptor.PageInterceptor">
-		<property name="dialectType" value="com.meidian.auth.interceptor.MySQLDialect" />
-	</plugin>
+			<property name="dialectType" value="com.meidian.auth.interceptor.MySQLDialect" />
+		</plugin>
 	</plugins>
 	<mappers>
 		<mapper resource="mybatis/mapper/AccessMapper.xml" />

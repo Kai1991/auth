@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/common/jquery-3.2.1.min.js"></script>
+    <script src="../js/common/page.js"></script>
+</head>
+<body>
+    <button class="view">view</button>
+
+</body>
+<script>
+    $('.view').click(function(e){
+        page('./test.html')
+        e.preventDefault()
+    })
+</script>
+</html>

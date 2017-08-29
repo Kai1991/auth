@@ -3,15 +3,13 @@ package com.meidian.auth.service.impl;
 import com.alibaba.fastjson.JSONObject;
 import com.meidian.auth.common.ServiceResult;
 import com.meidian.auth.entity.Access;
-import com.meidian.auth.interceptor.PageCondition;
+import com.meidian.auth.common.PageCondition;
 import com.meidian.auth.service.AccessService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import static org.junit.Assert.*;
 
 /**
  * Title: com.meidian.auth.service.impl<br>

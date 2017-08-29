@@ -2,7 +2,7 @@ package com.meidian.auth.manager.impl;
 
 import com.meidian.auth.dao.AccessDao;
 import com.meidian.auth.entity.Access;
-import com.meidian.auth.interceptor.PageCondition;
+import com.meidian.auth.common.PageCondition;
 import com.meidian.auth.manager.AccessManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

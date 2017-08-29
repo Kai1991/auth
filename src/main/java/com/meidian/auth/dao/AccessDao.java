@@ -1,7 +1,7 @@
 package com.meidian.auth.dao;
 
 import com.meidian.auth.entity.Access;
-import com.meidian.auth.interceptor.PageCondition;
+import com.meidian.auth.common.PageCondition;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

@@ -1,5 +1,6 @@
 package com.meidian;
 
+import com.meidian.auth.utils.RedisUtil;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -10,20 +11,26 @@ import org.apache.shiro.util.Factory;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.test.context.junit4.SpringRunner;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class DemoApplicationTests {
+	Logger logger = LoggerFactory.getLogger(DemoApplicationTests.class);
+
 	@Autowired
-	private RedisTemplate redisTemplate;
+	private JedisPool jedisPool;
 	@Autowired
-	private StringRedisTemplate stringRedisTemplate;
+	private RedisUtil redisUtil;
 
 	@Test
 	public void contextLoads() {
@@ -93,9 +100,15 @@ public class DemoApplicationTests {
 
 	@Test
 	public void  testRedis(){
-		ValueOperations<String, Object> value = redisTemplate.opsForValue();
-		value.set("test","test");
-		System.out.println(value.get("test"));
+		Jedis jedis = jedisPool.getResource();
+		jedis.set("Mytest","Mytest");
+		logger.info("Mytest:" + jedis.get("Mytest"));
+	}
+
+	@Test
+	public void testRedisUtil(){
+		redisUtil.set("testtest","testtest");
+		logger.info(redisUtil.getString("testtest"));
 	}
 
 }

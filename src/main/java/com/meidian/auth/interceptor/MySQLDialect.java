@@ -1,5 +1,7 @@
 package com.meidian.auth.interceptor;
 
+import com.meidian.auth.common.PageCondition;
+
 import java.util.regex.Pattern;
 
 /**

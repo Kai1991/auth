@@ -2,7 +2,7 @@ package com.meidian.auth.service;
 
 import com.meidian.auth.common.ServiceResult;
 import com.meidian.auth.entity.Access;
-import com.meidian.auth.interceptor.PageCondition;
+import com.meidian.auth.common.PageCondition;
 
 /**
  * Title: 权限服务<br>

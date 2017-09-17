@@ -1,7 +1,7 @@
 package com.meidian.auth.manager;
 
 import com.meidian.auth.entity.Access;
-import com.meidian.auth.common.PageCondition;
+import com.meidian.common.result.PageCondition;
 
 import java.util.List;
 

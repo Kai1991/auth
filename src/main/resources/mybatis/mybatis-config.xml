@@ -18,8 +18,8 @@
 		<package name="com.meidian.dao"/>
 	</typeAliases>
 	<plugins>
-		<plugin interceptor="com.meidian.auth.interceptor.PageInterceptor">
-			<property name="dialectType" value="com.meidian.auth.interceptor.MySQLDialect" />
+		<plugin interceptor="com.meidian.common.interceptor.PageInterceptor">
+			<property name="dialectType" value="com.meidian.common.interceptor.MySQLDialect" />
 		</plugin>
 	</plugins>
 	<mappers>

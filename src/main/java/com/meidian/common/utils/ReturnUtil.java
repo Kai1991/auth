@@ -1,6 +1,6 @@
-package com.meidian.auth.utils;
+package com.meidian.common.utils;
 
-import com.meidian.auth.common.ServiceResult;
+import com.meidian.common.result.ServiceResult;
 
 
 /**

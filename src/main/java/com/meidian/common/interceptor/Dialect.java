@@ -1,6 +1,6 @@
-package com.meidian.auth.interceptor;
+package com.meidian.common.interceptor;
 
-import com.meidian.auth.common.PageCondition;
+import com.meidian.common.result.PageCondition;
 
 /**
  * Title: com.meidian.auth.interceptor<br>

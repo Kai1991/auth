@@ -1,6 +1,6 @@
-package com.meidian.auth.interceptor;
+package com.meidian.common.interceptor;
 
-import com.meidian.auth.common.PageCondition;
+import com.meidian.common.result.PageCondition;
 import org.apache.ibatis.executor.parameter.ParameterHandler;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.mapping.BoundSql;

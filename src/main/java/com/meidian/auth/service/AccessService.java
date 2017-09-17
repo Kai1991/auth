@@ -1,8 +1,8 @@
 package com.meidian.auth.service;
 
-import com.meidian.auth.common.ServiceResult;
+import com.meidian.common.result.ServiceResult;
 import com.meidian.auth.entity.Access;
-import com.meidian.auth.common.PageCondition;
+import com.meidian.common.result.PageCondition;
 
 /**
  * Title: 权限服务<br>

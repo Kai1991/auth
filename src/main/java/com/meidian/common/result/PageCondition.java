@@ -1,4 +1,4 @@
-package com.meidian.auth.common;
+package com.meidian.common.result;
 
 /**
  * Title: com.meidian.auth.interceptor<br>

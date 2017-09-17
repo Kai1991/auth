@@ -1,4 +1,4 @@
-package com.meidian.auth.config;
+package com.meidian.common.config;
 
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
